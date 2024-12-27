@@ -1,0 +1,88 @@
+public class Main {
+  public static void main(String[] args) {
+//Basic Systax
+    System.out.println("Hello World");
+
+// Database/ Variables
+    int myNum = 18;               // integer (whole number)
+    float myFloatNum = 1.88f;    // floating point number
+    char myLetter = 'P';         // character
+    boolean myBool = true;       // boolean
+    String myText = "Hi Sir";     // String    
+    System.out.println(myNum);
+    System.out.println(myFloatNum);
+    System.out.println(myLetter);
+    System.out.println(myBool);
+    System.out.println(myText);
+
+   int i = 0;
+    while (i < 5) {
+      System.out.println(i);
+      i++;
+
+    LocalDateTime myDateObj = LocalDateTime.now();
+    System.out.println("Before formatting: " + myDateObj);
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+    String formattedDate = myDateObj.format(myFormatObj);
+    System.out.println("After formatting: " + formattedDate);
+
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+
+    Main thread = new Main();
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+if else
+
+import java.util.Scanner; // import the Scanner class 
+
+class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    String userName;
+    
+    // Enter username and press Enter
+    System.out.println("Enter username"); 
+    userName = myObj.nextLine();   
+       
+    System.out.println("Username is: " + userName);     
+
+if else
+
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+class Pig implements Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+
+  }
+}
+
+    }  
+  }
+}
